@@ -15,9 +15,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # some more ls/lsd aliases
 if [[ -x "$(command -v lsd)" ]]; then
     alias l='lsd -F'
-    alias ll='lsd -Fl --group-directories-first'
+    alias ll='lsd -Fl --group-directories-first --total-size'
     alias la='ll -A'
-    alias lt='lsd -FA --group-directories-first --tree'
+    alias lt='lsd -FA --group-directories-first --tree --depth 4'
 else
     alias l='ls -CF'
     alias ll='ls -FGhl --group-directories-first'
